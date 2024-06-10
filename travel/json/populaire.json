@@ -1,0 +1,27 @@
+{
+    "0": {
+        "image": "/assets/populaire/pop-1.jpg",
+        "title": "Montaigne",
+        "prix": "2 000$"
+    },
+    "1": {
+        "image": "/assets/populaire/pop-2.jpg",
+        "title": "Plaine",
+        "prix": "1 000$"
+    },
+    "2": {
+        "image": "/assets/populaire/pop-3.jpg",
+        "title": "Sites",
+        "prix": "3 000$"
+    },
+    "3": {
+        "image": "/assets/populaire/pop-4.jpg",
+        "title": "Montaigne",
+        "prix": "2 500$"
+    },
+    "4": {
+        "image": "/assets/populaire/pop-5.jpg",
+        "title": "Vallé",
+        "prix": "500$"
+    }
+}

@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-image: url('/assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.section-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.form-travel {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.553);
+    /* background-color: red; */
+}
+.title-from {
+    color: white;
+    font-size: 25px;
+    border-bottom: 1px solid white;
+    /* background-color: rgba(255, 255, 255, 0.602); */
+    width: 100%;
+}
+.title-from h1 {
+    margin: 20px;
+    text-align: center;
+}
+.form-travel-form {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 90%;
+}
+.info-perso ,.info-travel, .info-note {
+    display: flex;
+    flex-direction: column;
+}
+.title-form-1 h2 {
+    color: white;
+    padding: 20px 0;
+    font-size: 22px;
+    text-align: center;
+}
+.info-perso label {
+    color: white;
+    padding: 5px 0;
+    font-size: 18px;
+
+}
+.info-perso input {
+    color: white;
+    padding: 5px 0;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    outline: none;
+}
+.info-perso input:focus {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.info-travel label {
+    color: white;
+    padding: 5px 0;
+    font-size: 18px;
+
+}
+.info-travel input {
+    color: white;
+    padding: 5px 0;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    outline: none;
+}
+.info-travel input:focus {
+    color: white;
+    border-bottom: 2px solid white;
+}
+.select-travel {
+    background-color: white;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    padding: 0 10px;
+}
+.select-travel:focus {
+    background-color: white;
+}
+
+.info-note textarea {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    outline: none;
+    margin-bottom: 20px;
+    width: 95%;
+    height: 80px;
+    resize: none;
+}
+.btn-form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.btn-form button {
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 8px;
+}
+.btn-cancel {
+    background-color: black;
+    color: white;
+}
+.btn-cancel:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.929);
+    box-shadow: 0 0 1px white;
+}
+.btn-book {
+    background-color: blue;
+    color: white;
+}
+.btn-book:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 255, 0.922);
+    box-shadow: 0 0 1px white;
+}

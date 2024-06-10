@@ -1,0 +1,32 @@
+{
+    "0": {
+        "image": "/assets/loisirs/loisir-1.jpg",
+        "title": "Forêts",
+        "prix": "2 000$"
+    },
+    "1": {
+        "image": "/assets/loisirs/loisir-2.jpg",
+        "title": "Plateaux",
+        "prix": "800 $"
+    },
+    "2": {
+        "image": "/assets/populaire/pop-1.jpg",
+        "title": "Montaigne",
+        "prix": "2 000$"
+    },
+    "3": {
+        "image": "/assets/populaire/pop-2.jpg",
+        "title": "Plaine",
+        "prix": "1 000$"
+    },
+    "4": {
+        "image": "/assets/populaire/pop-4.jpg",
+        "title": "Montaigne",
+        "prix": "2 500$"
+    },
+    "5": {
+        "image": "/assets/populaire/pop-5.jpg",
+        "title": "Vallé",
+        "prix": "500$"
+    }
+}

@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.btn-return-list {
+    height: 45px;
+    width: 100px;
+    border-radius: 8px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+}
+.btn-return-list:hover {
+    background-color: rgba(222, 222, 222, 0.637);
+    cursor: pointer;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    /* background-color: white; */
+}
+main {
+    background-image: url('/assets/about-4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.section-title-list {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.section-title-list .title {
+    color: white;
+    width: 80%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 10%;
+}
+.title h1 {
+    font-size: 45px;
+    letter-spacing: 5px;
+} 
+.title h4 {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.824);
+}
+.section-title-list button {
+    padding: 10px 20px;
+    margin: 20px 10%;
+    border: none;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+}
+.section-title-list button:hover {
+    box-shadow: 0 0 1px white;
+    background-color: rgba(0, 0, 0, 0.817);
+    cursor: pointer;
+}
+
+.section-list-items {
+    /* height: 100vh; */
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+/* Pour le navigation */
+.paginate-categorie {
+    width: 100%;
+    height: 75px;
+}
+.list-categorie {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+}
+.categorie-item{
+    padding: 10px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: 1px solid white;
+    margin: 0 10px;
+}
+.actif-categorie {
+    background-color: rgba(255, 255, 255, 0.622);
+}
+.categorie-item:hover {
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.483);
+}
+
+.list-items {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: blue; */
+    /* overflow: hidden; */
+    position: relative;
+    border-radius: 20px;
+}
+.list-items-title {
+    text-align: left;
+    /* background-color: green; */
+    width: 100%;
+    color: white;
+    padding: 10px;
+} 
+.swiper-list-items {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.swiper-list-items .swiper-wrapper {
+    margin: 10px;
+}
+.swiper-list-items .swiper-slide {
+    width: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+.list-all {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.item-list-cat {
+    width: 230px;
+    height: 300px;
+    /* background-color: green; */
+    overflow: hidden;
+    margin: 20px;
+    position: relative;
+    border-radius: 10px;
+}
+.item-list-cat:hover {
+    cursor: pointer;
+}
+.swiper-list-items .swiper-slide img {
+    height: 300px;
+}
+.info-message {
+    position: absolute;
+    left: 0;
+    bottom: -26px;
+    background: rgba(173, 173, 173, 0.532);
+    color: white;
+    width: 100%;
+    padding: 10px 20px;
+    transition: all 0.4s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info-message .info h4 {
+    margin: 0;
+    padding: 5px 0;
+}
+.item-list-cat:hover .info-message {
+    bottom: 0;
+}
+.info-message svg {
+    display: none;
+    fill: white;
+    height: 20px;
+    width: 20px;
+    padding-left: 50%;
+}
+.item-list-cat:hover .info-message svg {
+    display: block;
+}

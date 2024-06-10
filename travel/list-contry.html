@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="swiper/package/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/css/list-contry.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <title>Swiper</title>
+</head>
+<body>
+    <header>
+        <div class="header close">
+            <div class="nothing">
+                <div class="slider-close" id="nav-button">
+                    <div class="close-slider">
+                    </div>
+                </div>
+            </div>
+            
+            <nav class="nav">
+                <ul class="nav-list">
+                    
+                </ul>
+    
+                <div class="content-book-now">
+                    <button class="btn-return-list" id="btn-return">Revenir</button>
+                    <button class="book-now" id="book-now">Réserver maintenant</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-title-list">
+            <div class="title">
+                <h1>Allons decouvrire le monde ensemble</h1>
+                <h4>Explorer le monde pour plus d'éxperience dans la survie humaine</h4>
+            </div>
+            <button id="learn-more">Voir ...</button>
+        </section>
+
+        <section class="section-list-items" id="list-cat">
+            <div class="paginate-categorie">
+                <ul class="list-categorie">
+                    <li class="categorie-item cat-0 actif-categorie" id="cat-all">
+                        <h1>All</h1>
+                    </li>
+                    <li class="categorie-item cat-1" id="cat-affaires">
+                        <h1>Affaires</h1>
+                    </li>
+                    <li class="categorie-item cat-2" id="cat-loisirs">
+                        <h1>Loisirs</h1>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="list-items">
+                <div class="swiper-list-items">
+
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="list-all" id="all">
+
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="list-all" id="affaire">
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="list-all" id="loisir">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="swiper/package/swiper-bundle.min.js"></script>
+    <script src="/js/list-contry.js"></script>
+</body>
+</html>

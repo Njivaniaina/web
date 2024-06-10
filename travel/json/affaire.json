@@ -1,0 +1,12 @@
+{
+    "0": {
+        "image": "/assets/affaire/affaire-1.jpg",
+        "title": "La nuit",
+        "prix": "1 000$"
+    },
+    "1": {
+        "image": "/assets/populaire/pop-3.jpg",
+        "title": "Sites",
+        "prix": "3 000$"
+    }
+}

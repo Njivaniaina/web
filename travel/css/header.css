@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(57, 57, 57);
+}
+
+header {
+    padding: 0;
+    margin: 0;
+}
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+    /* Pour le titre */
+.nothing {
+   width: 30%;
+   height: 0;
+}
+    /* Pour le navigateur */
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+    height: 40px;
+    padding: 50px;
+}
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    list-style: none;
+}
+.nav-item {
+    position: relative;
+}
+.nav-btn {
+    height: 45px;
+    padding: 0 15px;
+    border-radius: 8px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+.nav-btn:hover {
+    background: rgba(255, 255, 255, 0.581);
+    cursor: pointer;
+}
+.book-now {
+    background-color: black;
+    height: 45px;
+    padding: 0 15px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+.book-now:hover {
+    background: rgba(0, 0, 0, 0.581);
+    cursor: pointer;
+}
+
+@media (min-width:980px) {
+    .active-btn::before {
+        content: '';
+        position: absolute;
+        bottom: 3px;
+        left: 40%;
+        height: 5px;
+        width: 20px;
+        background-color: white;
+        border-radius: 3px;
+    }
+}
+@media (max-width:980px) {
+    .header {
+        position: absolute;
+        top: 0;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        transition: all 0.4s ease;
+    }
+    .close {
+        left: -140px;
+        height: 75px;
+        overflow: hidden;
+    }
+    .open {
+        left: 0;
+        height: 100vh;
+        background-color: transparent;
+        backdrop-filter: blur(10px);
+    }
+
+
+    .nothing {
+        height: 45px;
+        width: 100%;
+    }
+    .close .slider-close {
+        height: 75px;
+    }
+    .slider-close {
+        position: relative;
+        height: 45px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .close-slider {
+        display: flex;
+        justify-content: right;
+        z-index: 0;
+    }
+    .close-slider {
+        width: 50px;
+        height: 35px;
+        margin: 10px 5px;
+        border-radius: 8px;
+    }
+    .close-slider::before {
+        z-index: 1;
+        content: "";
+        position: absolute;
+        right: 18px;
+        top: 20px;
+        height: 3px;
+        width: 23px;
+        background: white;
+        border-radius: 2px;
+        transition: all 0.4s ease;
+        box-shadow: 0 6px 0 0.1px rgb(255, 255, 255);
+    }
+    .open .close-slider::before  {
+        transform: rotate(45deg);
+        box-shadow: none;
+        top: 26px;
+    }
+    .close-slider::after {
+        z-index: 1;
+        content: "";
+        position: absolute;
+        right: 18px;
+        top: 32px;
+        height: 3px;
+        width: 23px;
+        background: white;
+        border-radius: 2px;
+        transition: all 0.4s ease;
+    }
+    .open .close-slider::after  {
+        transform: rotate(-45deg);
+        top: 26px;
+    }
+
+    .nav {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .nav-list {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        padding-bottom: 50px;
+        list-style: none;
+    }
+    .nav-item {
+        height: 50px;
+        width: 100%;
+    }
+    .nav-btn {
+        height: 45px;
+        width: 100%;
+        border-radius: 8px;
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: left;
+    }
+    .nav-btn:hover {
+        background: rgba(255, 255, 255, 0.581);
+        cursor: pointer;
+    }
+    .book-now {
+        width: 100%;
+        background-color: black;
+        height: 45px;
+        padding: 0 15px;
+        border-radius: 8px;
+        border: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .book-now:hover {
+        background: rgba(0, 0, 0, 0.581);
+        cursor: pointer;
+    }
+}
+
+@media (max-width:520px) {
+    .header {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        transition: all 0.4s ease;
+    }
+    .close {
+        left: 0;
+        height: 55px;
+        overflow: hidden;
+    }
+    .open {
+        left: 0;
+        height: 100vh;
+    }
+
+
+    .nothing {
+        height: 45px;
+        width: 100%;
+    }
+    .close .slider-close {
+        height: 75px;
+    }
+    .slider-close {
+        position: relative;
+        height: 45px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .close-slider {
+        display: flex;
+        justify-content: right;
+        z-index: 0;
+    }
+    .close-slider {
+        width: 50px;
+        height: 35px;
+        margin: 10px 5px;
+        border-radius: 8px;
+    }
+    .close-slider::before {
+        z-index: 1;
+        content: "";
+        position: absolute;
+        right: 18px;
+        top: 20px;
+        height: 3px;
+        width: 23px;
+        background: white;
+        border-radius: 2px;
+        transition: all 0.4s ease;
+        box-shadow: 0 6px 0 0.1px rgb(255, 255, 255);
+    }
+    .open .close-slider::before  {
+        transform: rotate(45deg);
+        box-shadow: none;
+        top: 26px;
+    }
+    .close-slider::after {
+        z-index: 1;
+        content: "";
+        position: absolute;
+        right: 18px;
+        top: 32px;
+        height: 3px;
+        width: 23px;
+        background: white;
+        border-radius: 2px;
+        transition: all 0.4s ease;
+    }
+    .open .close-slider::after  {
+        transform: rotate(-45deg);
+        top: 26px;
+    }
+
+    .nav {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .nav-list {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        padding-bottom: 50px;
+        list-style: none;
+    }
+    .nav-item {
+        height: 50px;
+        width: 100%;
+    }
+    .nav-btn {
+        height: 45px;
+        width: 100%;
+        border-radius: 8px;
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: left;
+    }
+    .nav-btn:hover {
+        background: rgba(255, 255, 255, 0.581);
+        cursor: pointer;
+    }
+    .book-now {
+        width: 100%;
+        background-color: black;
+        height: 45px;
+        padding: 0 15px;
+        border-radius: 8px;
+        border: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .book-now:hover {
+        background: rgba(0, 0, 0, 0.581);
+        cursor: pointer;
+    }
+}

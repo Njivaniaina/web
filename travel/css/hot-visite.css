@@ -1,0 +1,185 @@
+.swiper-hot-visite {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-swiper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-visite {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.small-description {
+    width: 90%;
+    margin-top: 50px;
+}
+.small-description .title-small-description h1 {
+    color: white;
+    font-size: 25px;
+    padding: 0;
+    letter-spacing: 2px;
+}
+.small-description .description {
+    color: rgba(255, 255, 255, 0.831);
+    font-size: 14px;
+    width: 40%;
+}
+.visite {
+    height: 70vh;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: gray; */
+    /* overflow: hidden; */
+    position: relative;
+}
+.visite-title {
+    text-align: left;
+    /* background-color: green; */
+    width: 100%;
+    color: white;
+    padding: 10px;
+} 
+.swiper-visite {
+    width: 250px;
+    height: 45vh;
+    border-radius: 20px;
+}
+.swiper-visite .swiper-wrapper {
+    margin: 10px;
+}
+.swiper-visite .swiper-slide {
+    width: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+.swiper-visite .swiper-slide:hover {
+    cursor: pointer;
+}
+.swiper-visite .swiper-slide img {
+    height: 200px;
+    height: 45vh;
+    /* background-color: blueviolet; */
+}
+
+.visite:hover .slide-button-prev{
+    display: block;
+}
+.slide-button-prev{
+    display: none;
+    position: absolute;
+    left: 10px;
+    top: 45%;
+    z-index: 15;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.slide-button-prev:hover {
+    background: rgba(128, 128, 128, 0.499);
+}
+.slide-button-prev svg {
+    fill: rgb(181, 181, 181);
+}
+.visite:hover .slide-button-next{
+    display: block;
+}
+.slide-button-next{
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 45%;
+    z-index: 15;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.slide-button-next:hover {
+    background: rgba(128, 128, 128, 0.499);
+}
+.slide-button-next svg {
+    fill: rgb(181, 181, 181);
+}
+
+.info-message {
+    position: absolute;
+    left: 0;
+    bottom: -28px;
+    background: rgba(173, 173, 173, 0.532);
+    color: white;
+    width: 100%;
+    padding: 10px 10px;
+    transition: all 0.4s ease;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+.info-message .info h4 {
+    margin: 0;
+    padding: 5px 0;
+}
+.swiper-visite .swiper-slide:hover .info-message {
+    bottom: 0;
+}
+.info-message svg {
+    display: none;
+    fill: white;
+    height: 20px;
+    width: 20px;
+    padding-left: 100px;
+}
+.swiper-visite .swiper-slide:hover .info-message svg {
+    display: block;
+}
+
+.read-more {
+    margin-top: 30px;
+    height: 50px;
+    width: 100px;
+}
+.btn-read-more {
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 120px;
+    font-size: 18px;
+    padding: 10px;
+}
+.btn-read-more:hover {
+    background: rgba(0, 0, 0, 0.894);
+    cursor: pointer;
+}
+
+@media (max-width:850px) {
+    .small-description {
+        width: 90%;
+    }
+    .small-description .title-small-description h1 {
+        color: white;
+        font-size: 25px;
+        padding: 0;
+        letter-spacing: 2px;
+    }
+    .small-description .description {
+        color: rgba(255, 255, 255, 0.831);
+        font-size: 14px;
+        width: 100%;
+    }
+}
